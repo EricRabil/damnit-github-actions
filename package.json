@@ -1,0 +1,25 @@
+{
+  "name": "damnit-github-actions",
+  "version": "0.0.1",
+  "description": "Download archive_download_url without being logged in. Because what the fuck GitHub?",
+  "main": "dist/index.js",
+  "repository": "https://github.com/EricRabil/damnit-github-actions.git",
+  "author": "Eric Rabil <ericjrabil@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "yarn build --watch",
+    "build:start": "yarn build && yarn start",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}

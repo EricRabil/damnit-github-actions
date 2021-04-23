@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  dga:
+    build: .
+    environment:
+      PORT: 9272
+    env_file:
+      - .env
+    ports:
+      - 9272:9272
+    restart: unless-stopped
